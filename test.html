@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang='en'>
+<body>
+	<header>
+		<nav class="header-nav">
+		<ul class="leftAlignmentHeader">
+			<li><a href="#prediction-league">Prediction League</a></li>
+			<li><a href="#match-reports">Match Reports</a></li>
+			<li><a href="#guess-the-player">Guess the Player</a></li>
+		</ul>
+		<ul class="right-menu">
+			<li><a href="#about">About Us</a></li>
+			<li><a href="#fixtures">Fixtures</a></li>
+			<li><a href="#results">Results</a></li>
+			<li><a href="#shop">Shop</a></li>
+		</ul>
+	</nav>
+		<div class="hero">
+   <img src="groupphoto1.png" alt="Maroon Banner" width="1920" height="1550">
+   <h1>Mourinhos Men</h1>
+</div>
+
+          <style>
+	body {
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: maroon;
+	text-decoration: none;
+}
+
+.center-imageLogoHeader {
+    background-position: left 30px;
+}
+
+.header-nav {
+  background-image: url("LOGOOO.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 15% 170%;
+  text-align: center;
+  height: 60px; /* Set a height for the nav element */
+}
+
+.leftAlignmentHeader {
+  float: left; /* Add this property to keep the left-aligned links on the left side of the header */
+}
+
+.right-menu {
+  float: right; /* Add this property to keep the right-aligned links on the right side of the header */
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 2rem;
+}
+
+.leftAlignmentHeader {
+    width:1900px;
+    height:1px;
+}
+
+.button {
+	display: inline-block;
+	background-color: maroon;
+	color: white;
+	padding: 0.75rem 1.5rem;
+	border-radius: 0.25rem;
+	margin-top: 1rem;
+}
+
+.button:hover {
+	background-color: #800000;
+}
+
+/* Header */
+
+header {
+	background-color: white;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+	display: flex;
+	justify-content: flex-end;
+	padding: 1rem;
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+}
+
+nav ul li {
+	margin-left: 2rem;
+}
+
+nav ul li:first-child {
+	margin-left: 0;
+}
+
+nav ul li a {
+	font-weight: bold;
+}
+
+
+/* maroon banner */
+
+.hero {
+   text-align: center;
+}
+
+.hero h1 {
+   position: relative;
+   top: -50px;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 4rem;
+   color: white;
+   margin: 0;
+   padding: 1rem;
+}
+
+
+/* About Section */
+
+
+#about {
+	background-color: white;
+}
+
+#about h2 {
+	color: maroon;
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
+
+#about p {
+	line-height: 1.5;
+	margin-bottom: 1.5rem;
+}
+
+#about ul {
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
+	display: flex;
+	justify-content: center;
+}
+
+#about ul li {
+	margin-right: 2rem;
+}
+
+#about ul li:last-child {
+	margin-right: 0;
+}
+
+#about ul li i {
+	color: maroon;
+	margin-right: 0.5rem;
+}
+
+/* Team Section */
+.meet-players {
+  background-color: #f5f5f5;
+  padding: 50px;
+}
+
+.player-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.player {
+  margin: 20px;
+  text-align: center;
+}
+
+.player img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.player h3 {
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+.player p {
+  font-size: 18px;
+  color: #666;
+  margin: 10px 0;
+}
+
+
+
+#team {
+	background-color: #f5f5f5;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+
+#team h2 {
+	color: maroon;
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
+
+#team p {
+	line-height: 1.5;
+	margin-bottom: 1.5rem;
+}
+
+.member {
+	background-color: white;
+	border-radius: 0.25rem;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 2rem;
+	padding: 1.5rem;
+}
+
+.member img {
+	border-radius: 50%;
+	margin-bottom: 1rem;
+}
+
+.member h3 {
+	color: maroon;
+	font-size: 1.25rem;
+	margin-bottom: 0.5rem;
+}
+
+.member p {
+	text-align: center;
+	line-height: 1.5;
+	margin-bottom: 1.5rem;
+}
+
+/* Shop Section */
+
+#shop {
+	background-color: white;
+}
+
+#shop h2 {
+	color: maroon;
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
+
+#shop p {
+	line-height: 1.5;
+	margin-bottom: 1.5rem;
+}
+
+.products {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 2rem;
+}
+
+.product {
+	background-color: white;
+	border-radius: 0.25rem;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+	margin: 1rem;
+	padding: 1.5rem;
+	text-align: center;
+}
+
+.product img {
+	margin-bottom: 1rem;
+}
+
+.product h3 {
+	color: maroon;
+	font-size: 1.25rem;
+	margin-bottom: 0.5rem;
+}
+
+.product .price {
+	color: maroon;
+	font-weight: bold;
+	font-size: 1.25rem;
+	margin-bottom: 1rem;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  color: #333333;
+}
+
+th {
+  background-color: #8B0000;
+  color: #FFFFFF;
+  font-size: 18px;
+  text-align: left;
+  padding: 15px;
+}
+
+td {
+  background-color: #F5F5F5;
+  text-align: left;
+  padding: 10px;
+}
+
+tr:nth-child(even) td {
+  background-color: #FFFFFF;
+}
+
+tr:hover td {
+  background-color: #F2F2F2;
+}
+
+.opponent {
+  font-weight: bold;
+}
+
+.time {
+  font-style: italic;
+}
+
+.prediction-table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+
+.prediction-table th {
+  background-color: #f5f5f5;
+  padding: 8px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.prediction-table td {
+  padding: 16px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.prediction-table input[type="number"] {
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  width: 60px;
+  margin-right: 8px;
+}
+
+.prediction-table input[type="number"]:focus {
+  outline: none;
+}
+
+.prediction-table span {
+  font-size: 20px;
+  font-weight: bold;
+  color: #999999;
+  margin: 0 8px;
+}
+
+
+	</style>
+		</div>
+	</header>
+
+<section class="meet-players">
+  <h2>Meet the Players</h2>
+  <div class="player-list">
+    <div class="player">
+      <img src="player1.jpg" alt="Player 1">
+      <h3>Player 1</h3>
+      <p>Position: Forward</p>
+      <p>Age: 25</p>
+    </div>
+    <div class="player">
+      <img src="player2.jpg" alt="Player 2">
+      <h3>Player 2</h3>
+      <p>Position: Midfielder</p>
+      <p>Age: 27</p>
+    </div>
+    <div class="player">
+      <img src="player3.jpg" alt="Player 3">
+      <h3>Player 3</h3>
+      <p>Position: Defender</p>
+      <p>Age: 29</p>
+    </div>
+    <div class="player">
+      <img src="player4.jpg" alt="Player 4">
+      <h3>Player 4</h3>
+      <p>Position: Goalkeeper</p>
+      <p>Age: 31</p>
+    </div>
+    <div class="player">
+      <img src="player5.jpg" alt="Player 5">
+      <h3>Player 5</h3>
+      <p>Position: Midfielder</p>
+      <p>Age: 24</p>
+    </div>
+    <div class="player">
+      <img src="player6.jpg" alt="Player 6">
+      <h3>Player 6</h3>
+      <p>Position: Forward</p>
+      <p>Age: 28</p>
+    </div>
+    <div class="player">
+      <img src="player7.jpg" alt="Player 7">
+      <h3>Player 7</h3>
+      <p>Position: Defender</p>
+      <p>Age: 26</p>
+    </div>
+    <div class="player">
+      <img src="player8.jpg" alt="Player 8">
+      <h3>Player 8</h3>
+      <p>Position: Midfielder</p>
+      <p>Age: 23</p>
+    </div>
+    <div class="player">
+      <img src="player9.jpg" alt="Player 9">
+      <h3>Player 9</h3>
+      <p>Position: Defender</p>
+      <p>Age: 27</p>
+    </div>
+  </div>
+
+</section>
+
+
+	<section id="about">
+		<div class="container">
+			<h2>About Us</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in mi augue. Integer congue luctus ligula, vel sollicitudin purus eleifend a. Donec molestie varius magna non facilisis. Nunc rutrum risus non nibh feugiat, vel venenatis eros venenatis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed et lectus eu nibh malesuada cursus. Sed pellentesque lectus in massa fermentum interdum. </p>
+			<p>Phasellus a eros rhoncus, bibendum nisl non, interdum augue. Nullam dictum bibendum erat, ut posuere purus. Vivamus id est dignissim, fermentum urna vel, vestibulum magna. Sed euismod dolor a nulla sodales auctor. Etiam vel justo elit. Vestibulum elementum dui non sapien maximus, quis dictum velit lacinia.</p>
+		</div>
+	</section>
+
+	<section id="fixtures">
+		<div class="container">
+			<h2>Fixtures</h2>
+			<p>Upcoming fixtures will be displayed here.</p>
+          <table>
+  <thead>
+    <tr>
+      <th>Opponent</th>
+      <th>Date and Time</th>
+      <th>Position</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="opponent">Barcelona</td>
+      <td class="time">May 1, 2023 3:00 PM</td>
+      <td>3rd</td>
+    </tr>
+    <tr>
+      <td class="opponent">Real Madrid</td>
+      <td class="time">May 8, 2023 5:00 PM</td>
+      <td>1st</td>
+    </tr>
+    <tr>
+      <td class="opponent">Atletico Madrid</td>
+      <td class="time">May 15, 2023 7:00 PM</td>
+      <td>2nd</td>
+    </tr>
+  <tbody>
+           </table>
+		</div>
+	</section>
+
+	<section id="results">
+		<div class="container">
+			<h2>Results</h2>
+			<p>Previous results will be displayed here.</p>
+          <table>
+  <thead>
+    <tr>
+      <th>Opponent</th>
+      <th>Date and Time</th>
+      <th>Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="opponent">Barcelona</td>
+      <td class="time">May 11, 2023 3:00 PM</td>
+      <td>3-0</td>
+    </tr>
+    <tr>
+      <td class="opponent">Real Madrid</td>
+      <td class="time">May 18, 2023 5:00 PM</td>
+      <td>1-0</td>
+    </tr>
+    <tr>
+      <td class="opponent">Atletico Madrid</td>
+      <td class="time">May 25, 2023 7:00 PM</td>
+      <td>2-0</td>
+    </tr>
+  <tbody>
+           </table>
+		</div>
+	</section>
+
+    <section id="Predictor">
+		<div class="container">
+            <h2>Score Predictor</h2>
+    <form method="POST" action="/predict">
+	<table class="prediction-table">
+		<thead>
+			<tr>
+				<th>Fixture</th>
+				<th>Result</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Team A vs Team B</td>
+				<td>
+					<input type="number" name="home_score_1" value="" placeholder="Home">
+					<span>-</span>
+					<input type="number" name="away_score_1" value="" placeholder="Away">
+				</td>
+			</tr>
+			<tr>
+				<td>Team C vs Team D</td>
+				<td>
+					<input type="number" name="home_score_2" value="" placeholder="Home">
+					<span>-</span>
+					<input type="number" name="away_score_2" value="" placeholder="Away">
+				</td>
+			</tr>
+		</tbody>
+	</table>
+        <button type="submit" class="submit-button">Submit</button>
+</form>
+
+        </div>
+    </section>
+
+	<section id="shop">
+		<div class="container">
+			<h2>Shop</h2>
+			<p>Our team merchandise is available for purchase. Check out our range of jerseys, shorts, and socks!</p>
+			<a href="https://youtube.com" class="button">Visit Shop</a>
+			<div class="products">
+				<div class="product">
+					<img src="https://via.placeholder.com/150" alt="Jersey">
+					<h3>Team Jersey</h3>
+					<p class="price">$49.99</p>
+					<a href="#" class="button">Buy Now</a>
+				</div>
+				<div class="product">
+					<img src="https://via.placeholder.com/150" alt="Shorts">
+					<h3>Team Shorts</h3>
+					<p class="price">$29.99</p>
+					<a href="#" class="button">Buy Now</a>
+				</div>
+				<div class="product">
+					<img src="https://via.placeholder.com/150" alt="Socks">
+					<h3>Team Socks</h3>
+					<p class="price">$9.99</p>
+					<a href="#" class="button">Buy Now</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+</body>
+</html>

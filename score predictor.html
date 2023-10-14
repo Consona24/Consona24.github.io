@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Predictions</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f7f7f7;
+            color: #444444;
+        }
+
+        header {
+            background-color: maroon;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin: auto;
+            width: 80%;
+            background-color: #ffffff;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        td, th {
+            border: none;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: maroon;
+            color: #ffffff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        input[type=text] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 1rem;
+            color: #444444;
+            text-align: center;
+        }
+
+        input[type=text]:focus {
+            border: 1px solid maroon;
+            outline: none;
+        }
+
+        input[type=text][readonly] {
+            background-color: #f7f7f7;
+            cursor: not-allowed;
+        }
+
+        div.container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        div.container > div {
+            margin: 20px;
+            flex: 1 1 400px;
+            text-align: center;
+        }
+
+        input[type=text][pattern] {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Score Predictions</h1>
+    </header>
+    <div class="container">
+        <div>
+            <table>
+                <tr>
+                    <th>Fixture</th>
+                    <th>Prediction</th>
+                    <th>Submit</th>
+                </tr>
+                <tr>
+                    <td>Manchester United vs Liverpool</td>
+                    <td>
+                        <form method="POST" action="/">
+    <input type="text" name="home_score" pattern="\d+" title="Enter a number" style="width: 3.25em;">
+    <span style="display: inline-block; padding: 0 5px;">-</span>
+    <input type="text" name="away_score" pattern="\d+" title="Enter a number" style="width: 3.25em;">
+    <button type="submit">Submit</button>
+</form>
+                </tr>
+                <tr>
+                    <td>Chelsea vs Manchester City</td>
+                    <td>
+                        <form method="POST" action="/">
+    <input type="text" name="home_score" pattern="\d+" title="Enter a number" style="width: 3.25em;">
+    <span style="display: inline-block; padding: 0 5px;">-</span>
+    <input type="text" name="away_score" pattern="\d+" title="Enter a number" style="width: 3.25em;">
+    <button type="submit">Submit</button>
+</form>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
